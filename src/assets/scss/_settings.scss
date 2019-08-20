@@ -99,7 +99,7 @@ $button-padding: (
   tiny: 4px 8px 4px 8px,
   small: 5px 10px 5px 10px,
   default: 8px 16px 8px 16px,
-  large: 0px 18 18 18px,
+  // large: 0px 18 18 18px,
 );
 $button-font-size: (
   tiny: 10px,
@@ -115,7 +115,7 @@ $button-letter-spacing: 2px;
 $button-margin: 0 0 $global-margin 0;
 $button-background: $alert-color;
 $button-border: 2px solid $button-background;
-$button-radius: $global-radius;
+$button-radius: 0px;
 $button-rounded: $global-rounded;
 
 // 6. Callout

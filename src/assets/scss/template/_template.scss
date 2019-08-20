@@ -10,11 +10,13 @@ html {
     background-color: $light-gray;
   }
   .text-center {
-    font-family: $body-font-family;
-    color: $dark-gray;
+    margin: 10px 0;
+    padding: 0;
+    color: #656565;
+    font-family: Helvetica;
     font-size: 12px;
-    padding-top: 5px;
-    // font-style: italic;
+    line-height: 150%;
+    text-align: center;
   }
   a {
     text-decoration: underline;
@@ -31,8 +33,9 @@ html {
 .paragraphs {
   .sizzle-text {
     font-family: $body-second-font;
+    word-break: break-word;
     text-align: center;
-    font-size: 15px;
+    font-size: 16px;
     padding-top: 10px;
     padding-right: 18px;
     padding-bottom: 10px;
@@ -68,10 +71,14 @@ html {
   font-family: $body-second-font;
   text-transform: uppercase;
   border-collapse: separate !important;
-  padding-top: 0;
-  padding-right: 18px;
-  padding-bottom: 18px;
-  padding-left: 18px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  line-height: 100%;
+  // text-align: center;
+  text-decoration: none;
+  color: $black;
+  // display: block;
+  padding: 14px;
 }
 
 .footer {
@@ -83,6 +90,11 @@ html {
       padding-top: 9px;
       padding-right: 9px;
       padding-left: 9px;
+      display: block;
+      border: 0;
+      height: auto;
+      outline: none;
+      text-decoration: none;
     }
   }
   .text-center {
@@ -97,6 +109,7 @@ html {
   .address  {
     text-align: center;
     .cava {
+      font-size: 12px;
       font-weight: bold;
     }
     .street-number {
