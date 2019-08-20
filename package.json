@@ -52,12 +52,10 @@
     "yargs": "^4.1.0"
   },
   "babel": {
-    "presets": [
-      "es2015"
-    ]
+    "presets": ["es2015"]
   },
   "bugs": {
     "url": "https://github.com/evanszymkowicz/animation-email/issues"
   },
-  "homepage": "https://github.com/evanszymkowicz/animation-email#readme"
+  "homepage": "https://github.com/evanszymkowicz/animation-email/dist/index.html"
 }
