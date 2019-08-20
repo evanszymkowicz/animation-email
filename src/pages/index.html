@@ -1,55 +1,102 @@
 ---
-layout: index-layout
-subject: My Email Templates
+# Basics
+subject: grill school is in session
+
+button_1_copy:
+button_1_link:
 ---
 
 <spacer size="16"></spacer>
 
 <container>
 
-  <spacer size="24"></spacer>
-  
-  <row>
-    <columns small="12">
+{{> header}}
 
-    <p class="lead">Hi there!</p>
-    <p style="color: #484848; line-height: 1.5;">Thanks for downloading <a href="http://foundation.zurb.com/emails/docs/">Foundation for Emails!</a> Your days of coding up painful HTML emails are officially over. You’ll soon be cranking out some slick, responsive emails in no time! To help get you up and running, we've put together 11 templates for the most common email use cases including newsletters, transactional emails, and marketing blasts. Feel free to customize them to your hearts content.</p>
+<wrapper class="hero-image">
+	<container>
+		<row class="cava-name">
+			<img src="{{ root }}/assets/img/cava.jpg"  />
+		</row>
+	</container>
+</wrapper>
 
-    <spacer size="16"></spacer>
+<wrapper class="hero-image">
+	<container>
+		<row class="big-gif">
+			<img src="{{ root }}/assets/img/banner-img.gif"  />
+		</row>
+	</container>
+</wrapper>
 
-    <center>
-      <menu class="vertical">
-        <item href="{{root}}basic.html" target="_blank">Basic Template</item>
-        <item href="{{root}}drip.html" target="_blank">Drip Template</item>
-        <item href="{{root}}hero.html" target="_blank">Hero Template</item>
-        <item href="{{root}}marketing.html" target="_blank">Marketing Template</item>
-        <item href="{{root}}newsletter.html" target="_blank">Newsletter Template</item>
-        <item href="{{root}}newsletter-2.html" target="_blank">Newsletter 2 Template</item>
-        <item href="{{root}}order.html" target="_blank">Order Template</item>
-        <item href="{{root}}password.html" target="_blank">Password Template</item>
-        <item href="{{root}}sidebar.html" target="_blank">Sidebar Template</item>
-        <item href="{{root}}sidebar-hero.html" target="_blank">Sidebar Hero Template</item>
-        <item href="{{root}}welcome.html" target="_blank">Welcome Template</item>
-      </menu>
-    </center>
+<wrapper class="paragraphs">
+	<container>
+		<center>
+			<p class="sizzle-text">
+				Fire. Spice. Char. There’s nothing quite like the magic that happens when fresh proteins and bold flavors meet open flame. Satisfy those grilled-kissed cravings with these protein pairings.
+			</p>
+		</center>
+	</container>
+</wrapper>
 
-    <spacer size="16"></spacer>
+<wrapper class="bowls">
+	<container>
+		<h1 class="protein-powered">
+			protein-powered bowls:
+		</h1>
+		<center>
+			<row class="seasonal-item-img">
+				<img src="{{ root }}/assets/img/seasonal.jpg"  />
+			</row>
+			<row class="seasonal-item-img">
+				<img src="{{ root }}/assets/img/meatballs.jpg"  />
+			</row>
+			<row class="seasonal-item-img">
+				<img src="{{ root }}/assets/img/grilled-chicken.jpg"  />
+			</row>
+		</center>
+	</container>
+</wrapper>
 
-    <p>Happy Coding,</p>
-    <p>The Foundation Team</p>
+<spacer size="20"></spacer>
 
-
-    <spacer size="16"></spacer>
-
+<wrapper class="buttons">
+  <container>
+    <row>
+    <columns>
+      <center>
+        <button href="#" class="large">bring the heat</button>
+      </center>
     </columns>
   </row>
+	<hr/>
+  </container>
+</wrapper>
+
+<wrapper class="paragraphs">
+	<container>
+		<center>
+			<p class="sizzle-text">
+				Prefer to man your own grill? We respect that. Before you fire things up, grab CAVA Dips + Spreads and add these recipes to your roster.
+			</p>
+		</center>
+	</container>
+</wrapper>
+
+<wrapper class="buttons">
+  <container>
+    <row>
+    <columns>
+      <center>
+        <button href="#" class="large">see our grill tips</button>
+      </center>
+    </columns>
+  </row>
+  </container>
+</wrapper>
+
+
+{{> footer}}
+
 </container>
 
 <spacer size="16"></spacer>
-
-<center>
-  <small>Keep on keepin' on. &lt;3 <a style="color: #cacaca; text-decoration: underline;" href="http://zurb.com/">ZURB</a> </small>
-</center>
-
-<spacer size="16"></spacer>
-

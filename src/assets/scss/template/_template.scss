@@ -1,59 +1,111 @@
-// These are the styles to make some of the templates look extra nice.
-// Feel free to remove these styles for production!
-
-// Body Styles 
 body,
-html, 
-.body {
-  background: #f3f3f3 !important;
+html {
+  -webkit-font-smoothing: antialiased;
 }
 
-.container.header {
-  background: #f3f3f3;
-}
-
-.body-drip {
-  border-top: 8px solid #663399;
-}
-
-// Full Width Headers
 .header {
-  background: #8a8a8a;
+	& .container {
+    width: 100%;
+    border-collapse: collapse !important;
+    background-color: $light-gray;
+  }
+  .text-center {
+    font-family: $body-font-family;
+    color: $dark-gray;
+    font-size: 12px;
+    padding-top: 5px;
+    // font-style: italic;
+  }
+  a {
+    text-decoration: underline;
+  }
 }
 
-.header .columns {
-  padding-bottom: 0;
+.hero-image {
+  & .container {
+    width: 100%;
+    padding-bottom: 15px;
+  }
 }
 
-.header p {
-  color: #fff;
-  padding-top: 15px;
+.paragraphs {
+  .sizzle-text {
+    font-family: $body-second-font;
+    text-align: center;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-right: 18px;
+    padding-bottom: 10px;
+    padding-left: 18px;
+    float: left;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    -webkit-border-horizontal-spacing: 0px;
+    -webkit-border-vertical-spacing: 0px;
+  }
 }
 
-.header .wrapper-inner {
-  padding: 20px;
+.bowls {
+  .protein-powered {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    word-break: break-word;
+    border-spacing: 2px;
+    padding-right: 6%;
+    letter-spacing: 2px;
+    padding-bottom: 20px;
+    padding-left: 6%;
+    // padding-top: 20px;
+  }
 }
 
-.header .container {
-  background: transparent;
+.buttons {
+  font-family: $body-second-font;
+  text-transform: uppercase;
+  border-collapse: separate !important;
+  padding-top: 0;
+  padding-right: 18px;
+  padding-bottom: 18px;
+  padding-left: 18px;
 }
 
-// Social Media
-table.button.facebook table td {
-  background: #3B5998 !important;
-  border-color: #3B5998;
-}
-
-table.button.twitter table td {
-  background: #1daced !important;
-  border-color: #1daced;
-}
-
-table.button.google table td {
-  background: #DB4A39 !important;
-  border-color: #DB4A39;
-}
-
-.wrapper.secondary {
-  background: #f3f3f3;
+.footer {
+  & .container {
+    background-color: $white;
+  }
+  .social-icons {
+    & .social-media {
+      padding-top: 9px;
+      padding-right: 9px;
+      padding-left: 9px;
+    }
+  }
+  .text-center {
+    font-size: 12px;
+    font-style: italic;
+  }
+  .receiving {
+    font-size: 12px;
+    font-style: normal;
+    text-align: center;
+  }
+  .address  {
+    text-align: center;
+    .cava {
+      font-weight: bold;
+    }
+    .street-number {
+      font-size: 12px;
+      // font-weight: lighter;
+    }
+    a {
+      text-decoration: underline;
+      font-size: 12px;
+    }
+  }
 }

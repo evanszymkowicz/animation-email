@@ -1,8 +1,11 @@
 {
-  "name": "foundation-emails-template",
+  "name": "animation-email",
   "version": "1.0.0",
-  "description": "Basic template for a Foundation for Emails project.",
-  "repository": "zurb/foundation-emails-template",
+  "description": "HTML Emails with GIFs.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/evanszymkowicz/animation-email.git"
+  },
   "main": "gulpfile.babel.js",
   "scripts": {
     "start": "gulp",
@@ -49,6 +52,12 @@
     "yargs": "^4.1.0"
   },
   "babel": {
-    "presets": ["es2015"]
-  }
+    "presets": [
+      "es2015"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/evanszymkowicz/animation-email/issues"
+  },
+  "homepage": "https://github.com/evanszymkowicz/animation-email#readme"
 }
