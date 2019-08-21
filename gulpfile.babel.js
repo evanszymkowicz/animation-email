@@ -62,6 +62,14 @@ function pages() {
     .pipe(gulp.dest('dist'));
 }
 
+gulp.task('serveprod', function() {
+  connect.server({
+    root: ['dist/index.html'],
+    port: process.env.PORT || 5000, // localhost:5000
+    livereload: false
+  });
+});
+
 // Reset Panini's cache of layouts and partials
 function resetPages(done) {
   panini.refresh();
